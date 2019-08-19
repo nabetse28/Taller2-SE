@@ -10,7 +10,7 @@ static:
 	ar rv $(LIBBIB).a $(BIB).o
 	$(GCC) -L$(HEADERS) -I$(HEADERS) -o $(CAL) $(CAL).c -lbiblioteca -lm
 
-dinamic:
+dynamic:
 	$(GCC) -I $(HEADERS) -fPIC -c $(BIB).c
 	ld -o $(LIBBIB).so $(BIB).o -shared
 	$(GCC) -o $(CAL) $(CAL).c -I $(HEADERS) -L$(HEADERS) -$(LBIB) -lm 
