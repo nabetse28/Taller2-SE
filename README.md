@@ -11,7 +11,7 @@ make static
 ## Dinamic Library
 ```bash
 
-make dinamic
+make dynamic
 ./calculadora
 ```
 
